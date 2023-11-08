@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+
+/*__________________
+
+Configurações Gerais
+__________________*/
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+/*__________________
+
+Header e menu de navegação
+__________________*/
+header{
+    width: 100%; height: 100px;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-around;
+}
+
+header nav ul{
+    list-style-type: none;
+    width: 450px;
+    display: flex; justify-content: space-between;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav.menu-mobile{
+    display: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: #2f2f2f; font-weight: bold;
+}
+
+
+/*__________________
+
+Mosaico e opções de serviços
+__________________*/
+.mosaico{
+    width: 100%;
+}
+
+.mosaico-wraper{
+    width: 100%; height: auto;
+    display: flex; justify-content: flex-start;
+}
+
+.mosaico-single{
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 8px solid white;
+}
+
+.mosaico-single1{
+    background-image: url(../imagens/sessao-1/1.png); background-position: center;
+}
+
+.mosaico-single2{
+    background-image: url(../imagens/sessao-1/2.png);  background-position: center;
+}
+
+.mosaico-single3{
+    background-image: url(../imagens/sessao-1/3.png);  background-position: center;
+}
+
+.mosaico-single4{
+    background-image: url(../imagens/sessao-1/4.png);  background-position: center;
+}
+
+.mosaico-single5{
+    background-image: url(../imagens/sessao-1/5.png);  background-position: center;
+}
+
+.mosaico-single6{
+    background-image: url(../imagens/sessao-1/6.png);  background-position: center;
+}
+
+/*__________________
+
+Opções de serviços
+__________________*/
+
+.servicos{
+    width: 100%;
+    display: flex; justify-content: center; align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+.box-servicos{
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px;
+}
+
+.servicos > .box-servicos h2{
+    font-size: 21px;
+    color: white;
+    padding: 10px;
+}
+.servicos > .box-servicos p{
+    font-size: 13px;
+    color: white;
+    width: 250px;
+}
+
+.servicos > .box-servicos:nth-of-type(1){
+    width: 300px; height: 175px;
+    background-color: #576975;
+}
+
+.servicos > .box-servicos:nth-of-type(2){
+    width: 400px; height: 200px;
+    background-color: #688293;
+}
+
+.servicos > .box-servicos:nth-of-type(3){
+    width: 300px; height: 175px;
+    background-color: #576975;
+}
+
+
+/*__________________
+
+Sessão dos perfis
+__________________*/
+
+
+.perfil-container{
+    margin-top: 50px;
+    width: 100%; height: auto;
+    display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 32px;
+}
+
+.img-perfil{
+    width: 300px; height: 400px;
+    background-image: url(../imagens/img_perfil.png); background-repeat: no-repeat;
+}
+
+.texto-perfil{
+   width: 300px;
+   display: flex; flex-direction: column; gap: 12px;
+}
+
+.texto-perfil h2{
+    font-size: 20px;
+    color: #698293;
+ }
+ .texto-perfil p{
+    font-size: 14px;
+    color: #4b4b4b;
+ }
+
+ .section-video{
+    width: 100%; height: auto;
+    display: flex; flex-direction: row;
+ }
+
+ .box-video iframe{
+    width: 100%; height: 100%;
+ }
+
+ .box-video{
+    width: calc(100% / 3); height: 300px;
+    padding: 20px;
+ }
+
+ /*__________________
+
+Sessão dos tratamentos
+__________________*/
+
+.tratamentos{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%; display: flex; justify-content: center;
+}
+
+.tratamentos h1{
+    color: #698293; font-size: 21px; text-align: center;
+}
+
+.section-tratamento{
+    margin-top: 30px; margin-bottom: 50px;
+    width: 100%; height: auto;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-around;
+}
+
+.tratamento-container{
+    width: 33,3%; height: auto;
+    display: flex; flex-direction: column;
+}
+
+.tratamento-single{
+    padding: 20px; height: 150px; max-width: 300px;
+}
+
+.tratamento-single h2{
+    font-size: 18px; color: #737373;
+}
+
+.tratamento-single p{
+    font-size: 13px; color: #4b4b4b;
+}
+
+ /*__________________
+
+Sessão dos depoimentos dos clientes
+__________________*/
+
+.depoimentos{
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center; gap: 32px;
+}
+
+.depoimentos h1{
+    color: #698293; font-size: 21px;
+}
+
+.depoimento-single{
+    width: 400px; text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 22px;
+}
+.depoimento-single p{
+    font-size: 15px; color: #7b7b7b;
+}
+
+.depoimento-nome{
+    display: flex; flex-direction: row; align-items: center; gap: 10px;
+}
+
+.depoimento-nome img{
+    width: 32px; height: 32px; border-radius: 50%;
+}
+
+.depoimento-nome span{
+    font-size: 13px; font-weight: bold;
+    color: #576975; 
+}
+
+ /*__________________
+
+Sessão de redes sociais
+__________________*/
+
+.social{
+    width: 100%; margin-top: 30px;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+.social-instagram{
+    width: 100%; height: 200px;
+    background-color: #98a5ae;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;
+}
+
+.social-instagram img{
+    width: 30px; height: 30px;
+}
+.social-instagram p{
+    width: 450px; text-align: center;
+    font-size: 13px; color: white;
+}
+
+.social-instagram a{
+    font-weight: bold; font-size: 13px; color: white;
+    text-decoration: none;
+}
+
+.mosaico-social{
+    width: 100%;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+}
+
+.img-mosaico-social{
+    width: calc(100% / 4);
+    padding: calc(100% / 9);
+    background-image: url(../imagens/sessao-2/7.png); background-size: cover; background-repeat: no-repeat;
+    border: 8px solid white;
+}
+
+.social-facebook{
+    width: 100%; height: 200px;
+    background-color: #576975;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;
+}
+
+.social-facebook img{
+    width: 30px; height: 30px;
+}
+.social-facebook p{
+    width: 450px; text-align: center;
+    font-size: 13px; color: white;
+}
+
+.social-facebook a{
+    font-weight: bold; font-size: 13px; color: white;
+    text-decoration: none;
+}
+
+ /*__________________
+
+Sessão de contato
+__________________*/
+
+.contato{
+    padding: 60px 0;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+.contato h1{
+    color: #698293; font-size: 21px; text-align: center;
+}
+
+form{
+    width: 400px;
+    display: flex; flex-direction: column; align-items: center; gap: 22px;
+    padding: 10px; margin-top: 30px;
+}
+
+form span{
+    font-size: 15px; color: #4b4b4b;
+}
+
+form input[type=text]{
+    padding: 9px;
+    border: 1px solid #dadada;
+}
+
+form textarea{
+    padding: 9px;
+    border: 1px solid #dadada;
+}
+
+.form-wraper{
+    display: flex; flex-direction: column;
+}
+
+.form-wraper input[type=text]{
+    width: 95%;
+}
+
+.w100{
+    width: 95%;
+}
+
+.w100 input[type=text]{
+    width: 100%;
+}
+
+.w50{
+    width: 95%;
+    display: flex; justify-content: space-between;
+}
+
+form button{
+    width: 120px; height: 32px;
+    background-color: #688293; color: white;
+    font-size: 15px; font-weight: bold;
+    border: none; border-radius: 10px;
+    cursor: pointer;
+}
+
+ /*__________________
+
+Sessão de referências
+__________________*/
+
+.referencias{
+    width: 100%; padding: 40px 0;
+    background-color: #688293;
+    display: flex; align-items: center; justify-content: space-around; gap: 20px;
+}
+
+.referencia-single{
+    color: white;
+    display: flex; flex-direction: column; gap: 10px;
+}
+
+.referencia-single h2{
+    font-size: 18px; font-weight: bold;
+}
+
+.referencia-single p{
+    font-size: 13px; font-weight: normal;
+}
+
+footer{
+    width: 100%; padding: 30px 0;
+    display: flex; align-items: center; justify-content: center;
+    background-color: #576975;
+}
+
+footer img{
+    width: 200px;
+}

@@ -1,0 +1,241 @@
+@media (max-width: 768px){
+
+    /*__________________
+
+    Header e menu de navegação
+    __________________*/
+
+    header{
+        width: 100%; height: auto; padding: 20px;
+        display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+    }
+
+    header img{
+        width: 200px;
+    }
+
+    header nav ul{
+        width: 100%;
+        display: flex; flex-direction: column; align-items: center;
+        font-size: 13px;
+    }
+
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        cursor: pointer;
+        display: block;
+        width: 28px; height: 28px;
+        background-image: url(../imagens/menu-mobile.png); background-size: 100% 100%;
+    }
+
+    nav.menu-mobile ul{
+        position: absolute; top: 60px; left: 0;
+        background-color: white;
+        display: none;
+        text-align: center;
+    }
+
+    nav.menu-mobile ul li{
+        padding: 10px 0;
+    }
+
+    /*__________________
+
+    Opções de serviços
+    __________________*/
+
+    .servicos{
+        width: 100%; flex-direction: column;
+    }
+
+    .servicos > .box-servicos h2{
+        font-size: 18px;
+    }
+    .servicos > .box-servicos p{
+        font-size: 11px;
+    }
+
+    .servicos > .box-servicos:nth-of-type(1){
+        width: 80%; height: 175px;
+        background-color: #576975;
+    }
+    
+    .servicos > .box-servicos:nth-of-type(2){
+        width: 90%; height: 200px;
+        background-color: #688293;
+    }
+    
+    .servicos > .box-servicos:nth-of-type(3){
+        width: 80%; height: 175px;
+        background-color: #576975;
+    }
+
+    /*__________________
+
+    Perfil 
+    __________________*/
+
+    .perfil-container{
+        margin-top: 50px;
+        width: 100%; height: auto;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;
+    }
+
+    .img-perfil{
+        width: 300px; height: 400px;
+        background-image: url(../imagens/img_perfil.png); background-repeat: no-repeat;
+    }
+
+    .texto-perfil{
+        width: 300px; padding: 10px;
+        display: flex; flex-direction: column; gap: 12px;
+     }
+
+    .texto-perfil h2{
+        font-size: 18px;
+        color: #698293;
+        text-align: center;
+     }
+     .texto-perfil p{
+        font-size: 13px;
+        color: #4b4b4b;
+        text-align: justify;
+     }
+
+     .section-video{
+        width: 100%; height: auto;
+        display: flex; flex-direction: column;
+     }
+
+     .box-video{
+        width: 100%; height: 300px;
+        padding: 50px;
+     }
+
+    /*__________________
+
+    Sessão de exemplos de tratamentos
+    __________________*/
+
+    .tratamentos{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%; display: flex; justify-content: center;
+    }
+
+     .tratamentos h1{
+        color: #698293; font-size: 18px; text-align: center; width: 250px;
+    }
+
+      /*__________________
+
+    Sessão dos depoimentos dos clientes
+    __________________*/
+
+    .depoimentos{
+        width: 100%; margin-top: 100px;
+        display: flex; flex-direction: column; align-items: center; gap: 32px;
+    }
+
+    .depoimentos h1{
+        color: #698293; font-size: 18px;
+    }
+
+    .depoimento-single{
+        width: 300px; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 22px;
+    }
+    .depoimento-single p{
+        font-size: 13px; color: #7b7b7b;
+    }
+
+    .depoimento-nome{
+        display: flex; flex-direction: row; align-items: center; gap: 10px;
+    }
+
+    .depoimento-nome img{
+        width: 32px; height: 32px; border-radius: 50%;
+    }
+
+    .depoimento-nome span{
+        font-size: 13px; font-weight: bold;
+        color: #576975; 
+    }
+
+     /*__________________
+
+    Sessão de redes sociais
+    __________________*/
+
+
+    .social-instagram p{
+        width: 300px; text-align: center;
+        font-size: 11px; color: white;
+    }
+
+    .social-instagram a{
+        font-weight: bold; font-size: 12px; color: white;
+        text-decoration: none;
+    }
+
+    .social-facebook p{
+        width: 300px; text-align: center;
+        font-size: 11px; color: white;
+    }
+
+    .social-facebook a{
+        font-weight: bold; font-size: 12px; color: white;
+        text-decoration: none;
+    }
+
+
+    form{
+        width: 300px;
+        padding: 10px; margin-top: 30px;
+    }
+
+    .w50{
+        width: 95%;
+        display: flex; flex-direction: column; gap: 22px;
+    }
+
+    .w50 input[type=text]{
+        width: 100%;
+    }
+
+
+     /*__________________
+
+    Sessão de referências
+    __________________*/
+
+    .referencias{
+        display: flex; flex-direction: column; gap: 20px;
+    }
+
+    .referencia-single{
+        width: 200px;
+        color: white;
+        display: flex; flex-direction: column; gap: 10px; justify-content: flex-start;
+    }
+
+    .referencia-single h2{
+        font-size: 15px; font-weight: bold;
+    }
+    
+    .referencia-single p{
+        font-size: 11px; font-weight: lighter;
+    }
+
+    footer img{
+        width: 100px;
+    }
+
+
+
+
+
+}
